@@ -1,0 +1,485 @@
+[ 2017-03-18T14:31:37+08:00 ] 127.0.0.1 /Newthink/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.035505s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `cat` [ RunTime:0.1860s ]
+SQL: SELECT * FROM `cat`  [ RunTime:0.0160s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0645s ]
+SQL: SELECT * FROM `goods` WHERE ( is_best=1 ) ORDER BY goods_id desc LIMIT 3   [ RunTime:0.0425s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0045s ]
+SQL: SELECT * FROM `goods` WHERE ( is_hot=1 ) ORDER BY goods_id desc LIMIT 3   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `goods` WHERE ( is_new=1 ) ORDER BY goods_id desc LIMIT 3   [ RunTime:0.0015s ]
+NOTIC: [2] array_reverse() expects parameter 1 to be array, null given C:\xampp\htdocs\NewThink\Home\Controller\IndexController.class.php 第 23 行.
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.0490s ]
+SQL: SELECT * FROM `comment` ORDER BY comment_id desc LIMIT 3   [ RunTime:0.0160s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.056507s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.056507s ]
+NOTIC: [8] Undefined index: username C:\xampp\htdocs\NewThink\Runtime\Cache\Home\18349e8d608bc9cc2cca45b6f7b40053.php 第 31 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.140018s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.140018s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002500s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002500s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002500s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002500s ]
+
+[ 2017-03-18T14:31:40+08:00 ] 127.0.0.1 /Newthink/index.php/Home/Index/goods/goods_id/35.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001500s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0045s ]
+SQL: SELECT * FROM `goods` WHERE `goods_id` = 35 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cat` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `cat`  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.0045s ]
+SQL: SELECT * FROM `comment` WHERE ( 1=1 AND goods_id='35' )  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000500s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000500s ]
+NOTIC: [8] Undefined index: username C:\xampp\htdocs\NewThink\Runtime\Cache\Home\8de25f8abd1d85e11508e565c7779064.php 第 27 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029503s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029503s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.022503s ]
+INFO: [ app_end ] --END-- [ RunTime:0.023003s ]
+
+[ 2017-03-18T14:31:40+08:00 ] 127.0.0.1 /Newthink/index.php/Home/Index/goods/goods_id/animated_favicon.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001500s ]
+
+[ 2017-03-18T14:31:40+08:00 ] 127.0.0.1 /Newthink/index.php/Home/Index/goods/goods_id/images/ad/ads03.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-03-18T14:31:42+08:00 ] 127.0.0.1 /Newthink/index.php/Home/Flow/buy/goods_id/35.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `goods` WHERE `goods_id` = 35 LIMIT 1   [ RunTime:0.0035s ]
+NOTIC: [8] Undefined variable: ins C:\xampp\htdocs\NewThink\Home\Tool\CartTool.class.php 第 60 行.
+
+[ 2017-03-18T14:31:42+08:00 ] 127.0.0.1 /Newthink/index.php/Home/Flow/checkout.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001500s ]
+NOTIC: [8] Undefined variable: ins C:\xampp\htdocs\NewThink\Home\Tool\CartTool.class.php 第 60 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000500s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000500s ]
+NOTIC: [8] Undefined index: username C:\xampp\htdocs\NewThink\Runtime\Cache\Home\c07f2e89354bfb3f5f88e083ae0c66fb.php 第 26 行.
+NOTIC: [8] Use of undefined constant shop_price - assumed 'shop_price' C:\xampp\htdocs\NewThink\Runtime\Cache\Home\c07f2e89354bfb3f5f88e083ae0c66fb.php 第 219 行.
+NOTIC: [8] Use of undefined constant num - assumed 'num' C:\xampp\htdocs\NewThink\Runtime\Cache\Home\c07f2e89354bfb3f5f88e083ae0c66fb.php 第 219 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001500s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.023003s ]
+INFO: [ app_end ] --END-- [ RunTime:0.023003s ]
+
+[ 2017-03-18T14:31:43+08:00 ] 127.0.0.1 /Newthink/index.php/Home/Flow/animated_favicon.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+
+[ 2017-03-18T14:32:11+08:00 ] 127.0.0.1 /Newthink/index.php/Home/Flow/done.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000500s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004001s ]
+SQL: SHOW COLUMNS FROM `ordinfo` [ RunTime:0.2930s ]
+SQL: SHOW COLUMNS FROM `ordgoods` [ RunTime:0.1850s ]
+NOTIC: [8] Undefined variable: ins C:\xampp\htdocs\NewThink\Home\Tool\CartTool.class.php 第 60 行.
+SQL: INSERT INTO `ordinfo` (`ord_sn`,`user_id`,`xm`,`mobile`,`address`,`note`,`money`,`ordtime`) VALUES ('2017031814321130208','0','苏龙杰','18513574250','北京市通州区','','100','1489818731') [ RunTime:0.0105s ]
+SQL: INSERT INTO `ordgoods` (`ordinfo_id`,`goods_id`,`goods_name`,`shop_price`,`goods_num`) VALUES ('19','35','华为牛逼牛逼华为','100.00','1') [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000500s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000500s ]
+NOTIC: [8] Undefined index: username C:\xampp\htdocs\NewThink\Runtime\Cache\Home\722fa93435c5cd3c613f07bb23ee2715.php 第 26 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002001s ]
+
+[ 2017-03-18T14:32:11+08:00 ] 127.0.0.1 /Newthink/index.php/Home/Flow/favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000500s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-03-18T14:32:26+08:00 ] 127.0.0.1 /Newthink/index.php/Home/Index/goods/goods_id/favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000501s ]
+
+[ 2017-03-18T14:32:30+08:00 ] 127.0.0.1 /Newthink/index.php/Home/User/message.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001500s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0720s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: username C:\xampp\htdocs\NewThink\Runtime\Cache\Home\426bcd82530c7b1cfa5c2abc7ccda73c.php 第 28 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021503s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021503s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.077009s ]
+INFO: [ app_end ] --END-- [ RunTime:0.077009s ]
+
+[ 2017-03-18T14:32:30+08:00 ] 127.0.0.1 /Newthink/index.php/Home/User/animated_favicon.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-03-18T14:32:33+08:00 ] 127.0.0.1 /Newthink/index.php/Home/User/orderlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001500s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0040s ]
+NOTIC: [8] Undefined index: username C:\xampp\htdocs\NewThink\Home\Controller\UserController.class.php 第 110 行.
+NOTIC: [8] Undefined index: user_id C:\xampp\htdocs\NewThink\Home\Controller\UserController.class.php 第 111 行.
+NOTIC: D方法实例化没找到模型类Home\Model\OrdinfoModel
+SQL: SHOW COLUMNS FROM `ordinfo` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `ordinfo` WHERE `user_id` = null  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: username C:\xampp\htdocs\NewThink\Runtime\Cache\Home\c269bbe80006445fcbb669c657a51b6d.php 第 28 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028503s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028503s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001501s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001501s ]
+
+[ 2017-03-18T14:32:33+08:00 ] 127.0.0.1 /Newthink/index.php/Home/User/favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000500s ]
+INFO: [ app_init ] --END-- [ RunTime:0.009501s ]
+
+[ 2017-03-18T14:32:35+08:00 ] 127.0.0.1 /Newthink/index.php/Home/User/orderlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000500s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003501s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003501s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0050s ]
+NOTIC: [8] Undefined index: username C:\xampp\htdocs\NewThink\Home\Controller\UserController.class.php 第 110 行.
+NOTIC: [8] Undefined index: user_id C:\xampp\htdocs\NewThink\Home\Controller\UserController.class.php 第 111 行.
+NOTIC: D方法实例化没找到模型类Home\Model\OrdinfoModel
+SQL: SHOW COLUMNS FROM `ordinfo` [ RunTime:0.0075s ]
+SQL: SELECT * FROM `ordinfo` WHERE `user_id` = null  [ RunTime:0.0015s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000500s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000500s ]
+NOTIC: [8] Undefined index: username C:\xampp\htdocs\NewThink\Runtime\Cache\Home\c269bbe80006445fcbb669c657a51b6d.php 第 28 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029503s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000500s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-03-18T14:32:37+08:00 ] 127.0.0.1 /Newthink/index.php/Home/user/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001500s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0040s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000500s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000500s ]
+NOTIC: [8] Undefined index: username C:\xampp\htdocs\NewThink\Runtime\Cache\Home\e7681a1121778259e798367b521f9cb5.php 第 26 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026503s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026503s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001500s ]
+SQL: SELECT * FROM `user` WHERE `username` = '' LIMIT 1   [ RunTime:0.0165s ]
+
+[ 2017-03-18T14:32:37+08:00 ] 127.0.0.1 /Newthink/index.php/Home/user/animated_favicon.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+
+[ 2017-03-18T14:32:37+08:00 ] 127.0.0.1 /Newthink/index.php/Home/User/vcode.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001500s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0040s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001500s ]
+
+[ 2017-03-18T14:32:45+08:00 ] 127.0.0.1 /Newthink/index.php/Home/User/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0035s ]
+SQL: SELECT * FROM `user` WHERE `username` = 'test1' LIMIT 1   [ RunTime:0.0240s ]
+
+[ 2017-03-18T14:32:45+08:00 ] 127.0.0.1 /Newthink/index.php/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001500s ]
+SQL: SHOW COLUMNS FROM `cat` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `cat`  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `goods` WHERE ( is_best=1 ) ORDER BY goods_id desc LIMIT 3   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `goods` WHERE ( is_hot=1 ) ORDER BY goods_id desc LIMIT 3   [ RunTime:0.0040s ]
+SQL: SELECT * FROM `goods` WHERE ( is_new=1 ) ORDER BY goods_id desc LIMIT 3   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `comment` ORDER BY comment_id desc LIMIT 3   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000500s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000500s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.043506s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.043506s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001500s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001500s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-03-18T14:32:51+08:00 ] 127.0.0.1 /Newthink/index.php/Home/Index/goods/goods_id/35.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `goods` WHERE `goods_id` = 35 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `cat` [ RunTime:0.0035s ]
+SQL: SELECT * FROM `cat`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.0045s ]
+SQL: SELECT * FROM `comment` WHERE ( 1=1 AND goods_id='35' )  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000500s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001500s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001500s ]
+
+[ 2017-03-18T14:32:52+08:00 ] 127.0.0.1 /Newthink/index.php/Home/Index/goods/goods_id/images/ad/ads03.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+
+[ 2017-03-18T14:32:52+08:00 ] 127.0.0.1 /Newthink/index.php/Home/Index/goods/goods_id/favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-03-18T14:32:53+08:00 ] 127.0.0.1 /Newthink/index.php/Home/Flow/buy/goods_id/35.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001501s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001501s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `goods` WHERE `goods_id` = 35 LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: ins C:\xampp\htdocs\NewThink\Home\Tool\CartTool.class.php 第 60 行.
+
+[ 2017-03-18T14:32:53+08:00 ] 127.0.0.1 /Newthink/index.php/Home/Flow/checkout.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: ins C:\xampp\htdocs\NewThink\Home\Tool\CartTool.class.php 第 60 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000501s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000501s ]
+NOTIC: [8] Use of undefined constant shop_price - assumed 'shop_price' C:\xampp\htdocs\NewThink\Runtime\Cache\Home\c07f2e89354bfb3f5f88e083ae0c66fb.php 第 219 行.
+NOTIC: [8] Use of undefined constant num - assumed 'num' C:\xampp\htdocs\NewThink\Runtime\Cache\Home\c07f2e89354bfb3f5f88e083ae0c66fb.php 第 219 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027504s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027504s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000500s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001500s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001500s ]
+
+[ 2017-03-18T14:33:20+08:00 ] 127.0.0.1 /Newthink/index.php/Home/Flow/done.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000501s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ordinfo` [ RunTime:0.0045s ]
+SQL: SHOW COLUMNS FROM `ordgoods` [ RunTime:0.0050s ]
+NOTIC: [8] Undefined variable: ins C:\xampp\htdocs\NewThink\Home\Tool\CartTool.class.php 第 60 行.
+SQL: INSERT INTO `ordinfo` (`ord_sn`,`user_id`,`xm`,`mobile`,`address`,`note`,`money`,`ordtime`) VALUES ('2017031814332033975','1','苏龙杰','18513574250','北京市通州区','','100','1489818800') [ RunTime:0.0005s ]
+SQL: INSERT INTO `ordgoods` (`ordinfo_id`,`goods_id`,`goods_name`,`shop_price`,`goods_num`) VALUES ('20','35','华为牛逼牛逼华为','100.00','1') [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000500s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021503s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021503s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000500s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001500s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001500s ]
+
+[ 2017-03-18T14:33:37+08:00 ] 127.0.0.1 /Newthink/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `cat` [ RunTime:0.0045s ]
+SQL: SELECT * FROM `cat`  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `goods` WHERE ( is_best=1 ) ORDER BY goods_id desc LIMIT 3   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `goods` WHERE ( is_hot=1 ) ORDER BY goods_id desc LIMIT 3   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `goods` WHERE ( is_new=1 ) ORDER BY goods_id desc LIMIT 3   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.0160s ]
+SQL: SELECT * FROM `comment` ORDER BY comment_id desc LIMIT 3   [ RunTime:0.0015s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000500s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000500s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.049506s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.049506s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001500s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001500s ]
+
+[ 2017-03-18T14:33:40+08:00 ] 127.0.0.1 /Newthink/index.php/Home/User/message.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0045s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000500s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000501s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.027503s ]
+INFO: [ app_end ] --END-- [ RunTime:0.027503s ]
+
+[ 2017-03-18T14:33:42+08:00 ] 127.0.0.1 /Newthink/index.php/Home/User/orderlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001500s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0040s ]
+NOTIC: D方法实例化没找到模型类Home\Model\OrdinfoModel
+SQL: SHOW COLUMNS FROM `ordinfo` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `ordinfo` WHERE `user_id` = 1  [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000500s ]
+NOTIC: [8] Undefined variable: item C:\xampp\htdocs\NewThink\Runtime\Cache\Home\c269bbe80006445fcbb669c657a51b6d.php 第 230 行.
+NOTIC: [8] Undefined variable: item C:\xampp\htdocs\NewThink\Runtime\Cache\Home\c269bbe80006445fcbb669c657a51b6d.php 第 230 行.
+NOTIC: [8] Undefined variable: item C:\xampp\htdocs\NewThink\Runtime\Cache\Home\c269bbe80006445fcbb669c657a51b6d.php 第 230 行.
+NOTIC: [8] Undefined variable: item C:\xampp\htdocs\NewThink\Runtime\Cache\Home\c269bbe80006445fcbb669c657a51b6d.php 第 230 行.
+NOTIC: [8] Undefined variable: item C:\xampp\htdocs\NewThink\Runtime\Cache\Home\c269bbe80006445fcbb669c657a51b6d.php 第 230 行.
+NOTIC: [8] Undefined variable: item C:\xampp\htdocs\NewThink\Runtime\Cache\Home\c269bbe80006445fcbb669c657a51b6d.php 第 230 行.
+NOTIC: [8] Undefined variable: item C:\xampp\htdocs\NewThink\Runtime\Cache\Home\c269bbe80006445fcbb669c657a51b6d.php 第 230 行.
+NOTIC: [8] Undefined variable: item C:\xampp\htdocs\NewThink\Runtime\Cache\Home\c269bbe80006445fcbb669c657a51b6d.php 第 230 行.
+NOTIC: [8] Undefined variable: item C:\xampp\htdocs\NewThink\Runtime\Cache\Home\c269bbe80006445fcbb669c657a51b6d.php 第 230 行.
+NOTIC: [8] Undefined variable: item C:\xampp\htdocs\NewThink\Runtime\Cache\Home\c269bbe80006445fcbb669c657a51b6d.php 第 230 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033504s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000500s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002500s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002500s ]
+

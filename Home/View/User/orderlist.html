@@ -1,0 +1,102 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="Generator" content="手机网" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="Keywords" content="" />
+<meta name="Description" content="" />
+<title>GSM手机_手机类型_ECSHOP演示站 - Powered by ECShop</title>
+<link rel="shortcut icon" href="favicon.ico" />
+<link rel="icon" href="animated_favicon.gif" type="image/gif" />
+<link href="__PUBLIC__/Home/css/member.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="__PUBLIC__/Home/css/style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+
+<include file="Public/header" />
+
+<div class="content">
+	<div class="menu">当前位置: <span><a href=".">首页</a> <code>&gt;</code> 用户中心</span></div>	
+	<div class="user">
+
+		<div class="usernav">
+	
+
+	<include file="ucenter" />
+</div>		
+
+                    <div class="usermain">
+			
+						<div class="userright">
+				<div class="mainbt">我的订单</div>		
+				<div class="shop">
+					<ul class="shop_b">
+						<li class="shop_color">订单号</li>
+
+						<li class="cart_much">下单时间</li>
+						<li class="cart_nu">订单总金额</li>
+						<li class="shop_name">订单状态</li>
+						<!-- <li class="shop_oper">操作</li> -->
+						<div class="clear"></div>
+					</ul>
+					
+
+
+					<foreach name="ordinfo" item="o">
+                    <ul class="ulcollection">
+						<li class="shop_color"><a href="user.php?act=order_detail&order_id={$item.order_id}" class="f6">{$o.ord_sn}</a></li>
+						<li class="cart_much">{$o.ordtime|date="y-m-d",###}</li>
+						<li class="cart_nu">{$o.money}</li>
+						<?php if($o['paystatus']==1) {?>
+						<li class="shop_name">已支付</li>
+                        <?php } else if($o['paystatus']==0){?>
+                        <li class="shop_name">未支付</li>
+                        <?php }?>
+						<!-- <li class="shop_oper"><font class="f6">删除</font></li> -->
+						<div class="clear"></div>
+					</ul>
+					</foreach>
+
+
+					<div class="contno" style="overflow:hidden;height:30px;">
+
+					<div class="page">
+						
+<form name="selectPageForm" action="/shouji/user.php" method="get">
+
+
+ <div id="page" class="pagebar">
+  <span class="f_l f6" style="margin-right:10px;">总计 <b>0</b>  个记录</span>
+      
+      </div>
+
+</form>
+<script type="Text/Javascript" language="JavaScript">
+<!--
+
+function selectPage(sel)
+{
+  sel.form.submit();
+}
+
+//-->
+</script>
+					</div>
+					<div class="clear"></div>
+				</div>
+			</div>
+			<div class="clear"></div>			
+					</div>
+				</div>	  
+				
+		<div class="clear"></div>		
+	</div>
+</div>
+
+<include file="Public/footer" />
+
+
+</body>
+</html>

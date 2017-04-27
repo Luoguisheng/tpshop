@@ -1,0 +1,112 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="Generator" content="手机网" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="Keywords" content="" />
+<meta name="Description" content="" />
+<title>GSM手机_手机类型_ECSHOP演示站 - Powered by ECShop</title>
+<link rel="shortcut icon" href="favicon.ico" />
+<link rel="icon" href="animated_favicon.gif" type="image/gif" />
+<link href="__PUBLIC__/Home/css/member.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="__PUBLIC__/Home/css/style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<include file="Public/header" />
+
+<div class="content">
+	<div class="user">
+		<div class="menu">当前位置: <span><a href=".">首页</a> <code>&gt;</code> 购物流程</span></div>
+		
+					<form id=theForm name=theForm  action="{:U('Home/Flow/done')}" method=post>
+
+			<div class=shop>
+			<div class=shoporder>
+				<div id=step_2>
+					<div class=linebt><span>收货人信息</span><em></em></div>
+					<div class=tfmain_m>
+						<div class=shoporder_mdiv>
+							<div class=tfmain_mdivm id=step_2_address>
+								<p>姓名：<input type="text" name="xm" /></p>
+								<p>手机：<input type="text" name="mobile" /></p>
+								<p>地址： <input type="text" name="address" /></span></P>
+								<p>备注： <input type="text"  name="note /></p>
+								<div class=clear></div>
+							</div>
+							<div class=tfmain_butr><a href="flow.php?step=consignee" name=but_step2_g1>修改</a></div>
+						</div>
+					</div>
+				</div>
+			
+		<div id=step_7>
+			<div class=linebt><span>商品列表</span><em></em></div>
+			<ul class=orderm_b>
+			  <li class=orderm_num>序号 </li>
+			  <li class=orderm_zjd>商品名称 </li>
+			  <li class=orderm_zt>颜色 </li>
+			  <li class=orderm_xq>购买数量 </li>
+			  <li class=orderm_zf>本店价 </li>
+			  <li class=orderm_zf>小计 <div class=clear></div></li>
+			</ul>
+
+
+		<foreach name="items" item="g" key="k">
+			<ul>	
+			  <li class=orderm_num>{$k} </li>
+			  <li class=orderm_zjd>
+				<a href="goods.php?id=32" target="_blank">{$g.goods_name}</a><br />
+				<font style="font-size:12px">支持货到付款</font>
+			  </li>
+			  <li class=orderm_zt>黑色</li>
+			  <li class=orderm_xq>{$g.num} </li>
+			  <li class=orderm_zf>{$g.shop_price}</li>
+			  <li class=orderm_zf>{$g[shop_price]*$g[num]}</li><div class=clear></div>
+	     	</ul>
+		</foreach>
+
+
+			
+
+						<div class=contno>
+			<div class=contno_l>
+				<span>
+					购物金额小计 ￥{$money}元				</span>
+			</div>
+			<div class=contno_r><a class=f6 href="flow.php">回到购物车，添加或删除商品</a></div>
+			<div class=clear></div>
+			</div>
+			</div>
+			<div id=step_6 style="margin-top: 10px">
+			
+			</div>
+			<div id=step_6>
+			<div class=linebt><span id=step3>费用总计</span><em></em></div>
+			<div class=tfmain_m>
+				<div class=shoporder_mdiv>
+					<div class=tfmain_mdivm>
+						<div id=ECS_ORDERTOTAL style="padding-bottom: 20px; text-align: right">
+						商品总价: <font class=f4_b>￥{$money}元</font> <br>
+						应付款金额: <font class=f4_b>￥{$money}元</font> <br>
+					</div>
+				</div>
+			</div>
+			</div>
+			</div>
+			<input type=hidden value=done name=step> 
+			<div class=shoporder_enter>
+			请确认以上信息，下单后将无法修改<br>
+			<button class=buttonredb id=overbutton name=button_enter type=submit>确定下单</button>
+			</div>
+			</div>
+			</div>
+			</form>
+		
+		
+		
+			</div>
+</div>
+
+<include file="Public/footer" />
+</body>
+</html>

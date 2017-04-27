@@ -1,0 +1,157 @@
+<div id="header">
+        <div class="header_top">
+            <div class="header_top_l">
+            </div>
+            <div class="header_top_m">
+                <div style='float:left' id="ECS_MEMBERZONE">
+                    您好,欢迎光临本店!
+
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+                    <?php  if(!$_COOKIE['username']){ ?>
+                    <a href="{:U('/Home/user/login')}" style="color:#50884b">登录</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+                    <a href="{:U('/Home/user/zhuce')}" style="color:#50884b">免费注册
+                    </a>
+
+                    <?php }else{ ?>
+                    <?php echo $_COOKIE['username']; ?>     
+
+                    <a href="{:U('/Home/user/logout')}">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    退出
+                    </a>
+                    <?php } ?>
+                    
+                    <label id="myaccount">
+                        <a href="#">
+                
+                        </a>
+                    </label>
+                    
+
+                    <label id="helpcenter">
+                        <a href="#">
+                            帮助中心
+                        </a>
+                    </label>
+                </div>
+                <div style='float:right'>
+                    <label id="collect">
+                        <a href="">
+                            加入收藏
+                        </a>
+                    </label>
+                    <label id="sethome">
+                        <a href="{:U('Home/Index/index')}" onclick="SetHome(this,window.location)">
+                            设为首页
+                        </a>
+                    </label>
+                </div>
+                <div class='clear'>
+                </div>
+            </div>
+            <div class="header_top_r">
+            </div>
+            <div class="clear">
+            </div>
+        </div>
+        <div class="logo">
+            <a href="#">
+                <img src="__PUBLIC__/Home/images/logo.gif">
+            </a>
+        </div>
+        <div class="header_intro">
+            <img src="__PUBLIC__/Home/images/by_top.gif">
+        </div>
+        <div class="headerdg">
+            <em>
+                抢购热线（全天24小时）
+            </em>
+            <p>
+                <img src="__PUBLIC__/Home/images/tel1.gif">
+            </p>
+        </div>
+    </div>
+    <div id="nav">
+        <div class="nav_m">
+            <ul>
+                <li>
+                    <a href="{:U('Home/Index/index')}">
+                        首页
+                    </a>
+                </li>
+                <li>
+                    <a href="{:U('Home/Index/cat',array('cat_id'=>3))}">
+                        GSM手机
+                    </a>
+                </li>
+                <li>
+                    <a href="{:U('Home/Index/cat',array('cat_id'=>5))}">
+                        双模手机
+                    </a>
+                </li>
+                <li>
+                    <a href="{:U('Home/Index/cat',array('cat_id'=>8))}">
+                        耳机
+                    </a>
+                </li>
+                <li>
+                    <a href="{:U('Home/User/message')}">
+                        留言板
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <DIV class="navr_recent">
+            <SPAN class="navr_recent_l1">
+                　
+            </SPAN>
+            <!-- <A onmousedown="bubble(event);" href="#" name="myliulan">
+                <a href="#" title="查看购物车">
+                    <a href="#" title="查看购物车">
+                        您的购物车中有 0 件商品，总计金额 ￥0.00元。
+                    </a>
+                </a>
+            </A>
+            <EM>
+                &nbsp;&nbsp;&nbsp;&nbsp;
+            </EM> -->
+        </DIV>
+        <div class="clear">
+        </div>
+    </div>
+    <div class="nav_min_div" id="min_div">
+        <!-- <img src="__PUBLIC__/Home/images/top_min.jpg"> -->
+    </div>
+    <div id="body">
+        <div class="body_l">
+            <!-- <div class="subsearch">
+                <form id="searchForm" name="searchForm" method="get" action="search.php"
+                onSubmit="return checkSearchForm()">
+                    <div>
+                        <input name="keywords" type="text" id="keyword" value="" class="searchmobile">
+                        <button class="menu_button" name="menu_button" onClick="return checkSearchForm()">
+                        </button>
+                    </div>
+                </form>
+            </div> -->
+             <script type="text/javascript">
+                
+                // function checkSearchForm() {
+                //     if (document.getElementById('keyword').value) {
+                //         document.searchForm.submit();
+                //         return true;
+                //     } else {
+                //         alert("请输入搜索关键词！");
+                //         return false;
+                //     }
+                // }
+            </script>
+            <!-- <div class="subnav_header"> -->
+            <!-- </div> -->
+            <script type="text/javascript">
+            // function menu_c(o) {
+            //     alert(o.getElementsByTagName('ul').length);
+            // }
+            </script> 

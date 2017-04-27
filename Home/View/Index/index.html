@@ -1,0 +1,223 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    
+<head>
+    <meta name="Generator" content="手机网" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="Keywords" content="" />
+    <meta name="Description" content="" />
+    <title>
+        GSM手机_手机类型_ECSHOP演示站 - Powered by ECShop
+    </title>
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="icon" href="animated_favicon.gif" type="image/gif" />
+    <link href="__PUBLIC__/Home/css/index.css" rel="stylesheet" type="text/css" media="screen"
+    />
+    <link href="__PUBLIC__/Home/css/style.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src ="__PUBLIC__/Home/js/common.js"></script>
+</head>
+    
+<body>
+    <include file="Public/header" />
+
+            <div class="subnav">
+
+            <foreach name="cats" item="c">
+            <if condition="$c['parent_id'] eq 0">
+                <div>
+                    <span class="left">
+                        {$c.cat_name}
+                    </span>
+                    <span class="right subnav_right">
+                        <img src="__PUBLIC__/Home/images/line.gif" border="0" id="categorie_ico1">
+                    </span>
+                </div>
+
+                <ul>
+                    <foreach name="cats" item="d">
+                    <if condition="$d['parent_id'] eq $c['cat_id']">
+                    <li>
+                        &nbsp;
+                        <a href="{:U('Home/Index/cat',array('cat_id'=>$d['cat_id']))}">{$d.cat_name}</a>
+                    </li>
+                    </if>
+                    </foreach>
+                </ul>
+            </if>
+
+                </foreach>
+
+
+            </div>
+            <div class="subinfo_header">
+                <div class="left subinfo_header_left">
+                    <a href="#">
+                    </a>
+                </div>
+                <!--<div class="right subinfo_header_right"><a href="#">更多</a></div>-->
+            </div>
+            <div class="subinfo_body">
+
+
+                <ol>
+                <foreach name="comm" item="c">
+                    <li>
+                        <a href="#" title="{$c.content}" style="color:#333333">
+                            {$c.content}
+                        </a>
+                    </li>
+                </foreach>
+                </ol>
+
+
+            </div>
+
+            <div class="subinfo_footer">
+            </div>
+            <div class="subinfo_header">
+                <div class="">
+                    &nbsp;浏览历史
+                    <a href="#">
+                    </a>
+                </div>
+            </div>
+            <div class="subinfo_body_top10">
+                <ul>
+
+                <foreach name="history" item="h">
+                    <li>
+                        <div class="subinfo_body_top10_l">
+                            <a href="#">
+                                <img src="__PUBLIC__/Upload/{$h.thumb_img}" alt=""
+                                class="samllimg" />
+                            </a>
+                        </div>
+                        <div class="subinfo_body_top10_r">
+                            <p class="subinfo_body_top10_r_1">
+                                <a href="#">{$h.goods_name}</a>
+                            </p>
+                            <p class="subinfo_body_top10_r_3">
+                                ￥{$h.shop_price}元
+                            </p>
+                        </div>
+                        <div class="clear">
+                        </div>
+                    </li>
+                </foreach>
+                
+                </ul>
+            </div>
+            <div class="subinfo_footer">
+            </div>
+            <div class="submessage_header">
+                &nbsp;
+            </div>
+            <div class="submessage_body">
+                <a href="#" target="_blank">
+                   <a href="{:U('Home/User/message')}">    
+                       <img src="__PUBLIC__/Home/images/message.gif">
+                    </a>
+                </a>
+            </div>
+            <div class="subinfo_footer">
+            </div>
+        </div>
+        <div class="body_r" style=" display:inline">
+            <div class="mainbig">
+                <img src="__PUBLIC__/Home/images/banner.jpg" />
+            </div>
+            <div class="clear">
+            </div>
+            <div class="mainheader">
+                <div class="weekbuy">
+                    <a href="search.php?intro=new">
+                        <!-- 更多&gt;&gt; -->
+                    </a>
+                </div>
+            </div>
+            <ul class="productlist">
+
+            <foreach name="bests" item="b">
+                <li>
+                    <a href="{:U('Home/Index/goods',array('goods_id'=>$b['goods_id']))}">
+                        <img src="__PUBLIC__/upload/{$b.thumb_img}" alt="{$b.goods_name}"
+                                class="samllimg" />
+                    </a>
+                    <p class="pname">
+                        <a href="#" title="{$b.goods_name}">
+                            {$b.goods_name}{$b.goods_brief}
+                        </a>
+                    </p>
+                    <p class="price">
+                        ￥{$b.shop_price}元
+                    </p>
+                </li>
+            </foreach>
+
+
+            </ul>
+            <div class="clear"></div>
+            <div class="mainheader">
+                <div class="lowerbuy">
+                    <a href="search.php?intro=new">
+                        <!-- 更多&gt;&gt; -->
+                    </a>
+                </div>
+            </div>
+            <ul class="productlist">
+
+
+            <foreach name="hots" item="h">
+                <li>
+                    <a href="{:U('Home/Index/goods',array('goods_id'=>$h['goods_id']))}">
+                        <img src="__PUBLIC__/Upload/{$h.thumb_img}" alt="{$h.goods_name}" />
+                    </a>
+                    <p class="pname">
+                        <a href="#" title="{$h.goods_name}">
+                            {$h.goods_name}{$h.goods_brief}
+                        </a>
+                    </p>
+                    <p class="price">
+                        ￥{$h.shop_price}元
+                    </p>
+                </li>
+                </foreach>
+               
+            </ul>
+            <div class="clear"></div>
+            <div class="mainheader">
+                <div class="newproduct">
+                    <a href="search.php?intro=new">
+                        <!-- 更多&gt;&gt; -->
+                    </a>
+                </div>
+            </div>
+            <ul class="productlist">
+
+            <foreach name="news" item="n">
+                <li>
+                    <a href="{:U('Home/Index/goods',array('goods_id'=>$n['goods_id']))}">
+                        <img src="__PUBLIC__/Upload/{$n.thumb_img}" alt="{$n.goods_name}" />
+                    </a>
+                    <p class="pname">
+                        <a href="#" title="{$n.goods_name}">
+                            {$n.goods_name}{$n.goods_brief}
+                        </a>
+                    </p>
+                    <p class="price">
+                        ￥{$n.shop_price}元
+                    </p>
+                </li>
+                </foreach>
+
+            </ul>
+        </div>
+        <div class="clear">
+        </div>
+    </div>
+    </div>
+
+<include file="Public/footer" />    
+</body>
+
+</html>

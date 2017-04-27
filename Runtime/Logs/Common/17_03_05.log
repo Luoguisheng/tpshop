@@ -1,0 +1,30 @@
+[ 2017-03-05T00:48:47+08:00 ] 127.0.0.1 /Newthink/index.php/animated_favicon.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Animated_favicon
+
+[ 2017-03-05T00:50:05+08:00 ] 127.0.0.1 /Newthink/index.php/favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Favicon
+
+[ 2017-03-05T02:49:02+08:00 ] 127.0.0.1 /Newthink/index.php/animated_favicon.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Animated_favicon
+
+[ 2017-03-05T02:50:02+08:00 ] 127.0.0.1 /Newthink/index.php/favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Favicon
+
+[ 2017-03-05T11:37:28+08:00 ] 127.0.0.1 /Newthink/index.php/animated_favicon.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Animated_favicon
+
