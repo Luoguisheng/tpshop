@@ -7,5 +7,5 @@ define('APP_DEBUG', true);
 //引入TP
 require('./ThinkPHP/ThinkPHP.php');
 
-
+echo 'sdsds';
  ?>
